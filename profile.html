@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <div class="logo">Food <b style="color: #06C167;">Wastage</b></div>
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class "line"></div>
+        <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+
+<div class="profile">
+    <div class="profilebox">
+        <p class="headingline">Profile</p>
+        <br>
+        <div class="info" style="padding-left: 10px;">
+            <p>Name: Your Name</p><br>
+            <p>Email: your.email@example.com</p><br>
+            <p>Gender: Male/Female</p><br>
+            <a href="#" style="float: left; margin-top: 6px; border-radius: 5px; background-color: #06C167; color: white; padding: 5px 10px;">Logout</a>
+        </div>
+        <hr>
+        <br>
+        <p class="heading">Your donations</p>
+        <div class="table-container">
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Food</th>
+                            <th>Type</th>
+                            <th>Category</th>
+                            <th>Date/Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Donated Food 1</td>
+                            <td>Type 1</td>
+                            <td>Category 1</td>
+                            <td>Date/Time 1</td>
+                        </tr>
+                        <tr>
+                            <td>Donated Food 2</td>
+                            <td>Type 2</td>
+                            <td>Category 2</td>
+                            <td>Date/Time 2</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
